@@ -6,15 +6,15 @@
 package PostresM;
 
 import Otros.Aderezo;
+import ProductosM.Producto;
 import java.util.ArrayList;
 
 /**
  *
  * @author Administrador
  */
-public class Postre {
+public class Postre extends Producto{
     protected String sabor;
-    protected double precioParcial;
     protected ArrayList<Aderezo> aderezos;
 
     public Postre(String sabor) {
@@ -22,17 +22,17 @@ public class Postre {
         aderezos= new ArrayList<>();
     }
     
+     
+    public ArrayList<Aderezo> getAderezos() {
+        return aderezos;
+    }
+
     
-    
-     public double calcularPrecioFinal(){
+    public double calcularPrecioFinal() {
         double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
+        precioFinal=(getPrecioParcial()+(getPrecioParcial()*0.12))+(aderezos.size()*0.50);
         return precioFinal;
     }
     
     
-    
-    public ArrayList<Aderezo> getAderezos() {
-        return aderezos;
-    }
 }
