@@ -1,5 +1,5 @@
 package LecheM;
 
-public interface Leche {
+public interface I_Leche {
     void usar();
 }

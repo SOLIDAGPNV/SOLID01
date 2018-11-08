@@ -5,13 +5,12 @@
  */
 package ProductosM;
 
-import PostresM.Postre;
 
 /**
  *
  * @author Administrador
  */
-public class Producto {
+public class Producto implements CalculoPrecio{
         protected double precioParcial;
 
     public double getPrecioParcial() {
@@ -22,6 +21,7 @@ public class Producto {
         this.precioParcial = precioParcial;
     }
     
+    @Override
     public double calcularPrecioFinal(){
         double precioFinal;
         precioFinal=(getPrecioParcial()+(getPrecioParcial()*0.12));

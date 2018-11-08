@@ -5,7 +5,7 @@
  */
 package ProcesosM;
 
-import Otros.Aderezo;
+import OtrosM.Aderezo;
 import PostresM.Postre;
 
 /**

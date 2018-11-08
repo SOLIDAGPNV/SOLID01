@@ -9,9 +9,9 @@ package LecheM;
  *
  * @author Pedro Mendoza
  */
-public class LecheDescremada implements Leche{
+public class LecheDescremada implements I_Leche{
 
-   
+   @Override
     public void usar() {
         //Usando leche descremada
     }

@@ -4,11 +4,10 @@
  * and open the template in the editor.
  */
 package PrincipalM;
-import Principal.*;
-import Postres.*;
-import Procesos.*;
-import Leche.*;
-import Otros.*;
+import CalculosM.CalculoPrecioFinal;
+import PostresM.*;
+import ProcesosM.*;
+import OtrosM.*;
 /**
  *
  * @author djurado
@@ -20,16 +19,15 @@ public class Sistema {
         
         // Producir Helado
         Helado helado_vainilla = new Helado("Vainilla");
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoHelado(helado_vainilla, Aderezo.FRUTILLA);
+        AñadeAderezo.anadirAderezo(helado_vainilla, Aderezo.CREMA);
+        AñadeAderezo.anadirAderezo(helado_vainilla, Aderezo.FRUTILLA);
         System.out.println(helado_vainilla);
         
         // Producir Pastel
         Pastel pastel_chocolate = new Pastel("Chocolate");
-        OperacionesAderezo.quitarAderezoPastel(pastel_chocolate, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoPastel(pastel_chocolate, Aderezo.FRUTILLA);
+        QuitaAderezo.quitarAderezo(pastel_chocolate, Aderezo.CREMA);
+        QuitaAderezo.quitarAderezo(pastel_chocolate, Aderezo.FRUTILLA);
         System.out.println(pastel_chocolate);
-        
-        
+     
     }
 }

@@ -5,16 +5,15 @@
  */
 package LecheM;
 
-import Leche.*;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class LecheDeslactosada implements Leche{
+public class LecheDeslactosada implements I_Leche{
 
+    @Override
     public void usar() {
-        //UsandoLecheDeslactosada
-    }
+   }
     
 }

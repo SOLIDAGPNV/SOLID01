@@ -5,9 +5,9 @@
  */
 package ProcesosM;
 
-import Procesos.*;
-import Leche.LecheDeslactosada;
-import Leche.LecheDescremada;
+
+import LecheM.LecheDeslactosada;
+import LecheM.LecheDescremada;
 
 /**
  *

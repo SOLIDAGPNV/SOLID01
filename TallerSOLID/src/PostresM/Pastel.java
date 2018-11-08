@@ -5,25 +5,18 @@
  */
 package PostresM;
 
-import Postres.*;
-import java.util.ArrayList;
-import Otros.Aderezo;
-
 /**
  *
  * @author Pedro Mendoza
  */
 public class Pastel extends Postre{
-  
-    
-    public Pastel(String sabor){
-        
-        super(sabor);
-       
+
+    public Pastel(String sabor)
+    {
+        super(sabor);      
     }
     
  
-
     @Override
     public String toString() {
         return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';

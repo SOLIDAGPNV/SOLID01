@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OtrosM;
+package ProductosM;
 
 
 /**
  *
- * @author Pedro Mendoza
+ * @author Administrador
  */
-public enum Aderezo {
-    MALVAVISCOS,GRAGEAS,CHISPAS,FRUTILLA,CREMA
+public interface CalculoPrecio {
+    //Deben implementarlo todos los productos
+    public double calcularPrecioFinal();
 }

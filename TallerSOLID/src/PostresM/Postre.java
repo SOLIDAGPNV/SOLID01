@@ -5,7 +5,7 @@
  */
 package PostresM;
 
-import Otros.Aderezo;
+import OtrosM.Aderezo;
 import ProductosM.Producto;
 import java.util.ArrayList;
 
@@ -17,6 +17,7 @@ public class Postre extends Producto{
     protected String sabor;
     protected ArrayList<Aderezo> aderezos;
 
+    
     public Postre(String sabor) {
         this.sabor = sabor;
         aderezos= new ArrayList<>();
@@ -28,6 +29,7 @@ public class Postre extends Producto{
     }
 
     
+    @Override
     public double calcularPrecioFinal() {
         double precioFinal;
         precioFinal=(getPrecioParcial()+(getPrecioParcial()*0.12))+(aderezos.size()*0.50);
