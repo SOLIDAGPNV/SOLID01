@@ -5,13 +5,11 @@
  */
 package LecheM;
 
-import Leche.*;
-
 /**
  *
  * @author Pedro Mendoza
  */
-public class LecheDescremada {
+public class LecheDescremada implements Leche{
 
    
     public void usar() {

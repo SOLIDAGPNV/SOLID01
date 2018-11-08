@@ -11,7 +11,7 @@ import Leche.*;
  *
  * @author Pedro Mendoza
  */
-public class LecheDeslactosada{
+public class LecheDeslactosada implements Leche{
 
     public void usar() {
         //UsandoLecheDeslactosada
