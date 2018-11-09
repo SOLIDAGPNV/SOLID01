@@ -15,13 +15,11 @@ import LecheM.LecheDescremada;
  */
 public class CambioLeche {
     
-    public void cambiarTipoLecheDescremada(){
-        LecheDescremada ldescrem= new LecheDescremada();
+    public void cambiarTipoLecheDescremada(LecheDescremada ldescrem){
         ldescrem.usar();
     }
     
-    public void cambiarTipoLecheDeslactosada(){
-        LecheDeslactosada ldeslac= new LecheDeslactosada();
+    public void cambiarTipoLecheDeslactosada(LecheDeslactosada ldeslac){
         ldeslac.usar();
     }    
 }
